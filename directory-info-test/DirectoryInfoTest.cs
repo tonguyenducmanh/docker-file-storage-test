@@ -38,6 +38,9 @@ namespace InfoTest
 
             // đọc thông tin các file
             ReadFileInfo(allFileNames, path);
+            
+            // xóa các thư mục đã debug ở lần trước
+            DeleteFolderIfExists(path);
         }
 
         /// <summary>
